@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/********************** header ********************/
+header{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    padding: 20px 120px;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.664)
+}
+
+.newHead{
+    background-color: #000;
+    height: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    padding: 20px 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    cursor: pointer;
+    width: 180px;
+    height: 170px;
+    margin-top: 20px;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist li{
+    position: relative;
+    list-style: none;
+}
+
+.navlist li .norm{
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navlist li .norm::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    bottom: -3px;
+    left: 0;
+    transition: ease .4s;
+}
+
+.navlist li .norm:hover::after{
+    width: 100%;
+}
+
+.signUp-btn{
+    color: #000000;
+    letter-spacing: 1px;
+    margin-left: 25px;
+    padding: 12px 35px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+ 
+.signUp-btn:hover{
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+
+/*  */
+.container{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, #1b1b1b7a, #1b1b1b7e) , url('../../images/barbeque/barbeque4.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px 150px;
+    box-sizing: border-box;
+}
+
+.information{
+    padding: 10%;
+    padding-top: 16%;
+    background-color: #c9c9c950;
+}
+
+.information2{
+    padding: 10%;
+    padding-top: 9%;
+    background-color: #c9c9c950;
+}
+
+.title h1{
+    color: #272727;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.info{
+    margin-top: 40px;
+}
+
+.info p{
+    margin-top: 20px;
+}
+
+.info img{
+    width: 1000px;
+    height: 500px;
+}
+
+.carbon{
+    background-image: linear-gradient(to left, #aca8a805, #242323e0), url('../../images/technology/carbon.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20% 9%;
+}
+
+.carbon h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.carbon p{
+    color: #fff;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+/* .carbon{
+    margin-top: 10%;
+}
+
+.carbon h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.carbon1{
+    margin-top: 20px;
+}
+
+.carbon3{
+    margin-top: 10px;
+}
+
+.carbonImg{
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.carbonImg img{
+    width: 1100px;
+    height: 600px;
+} */
+
+/*************** Footer ************/
+.footer{
+    background-color: rgb(31, 30, 30);
+    padding: 16% 6.5%;
+}
+
+.company h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.company p{
+    color: rgba(255, 255, 255, 0.473);
+    margin-left: 70px;
+}
+
+.footerNavlist {
+    margin-top: -10px;
+    margin-left: 130px;
+}
+
+.footerNavlist ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footerNavlist ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: ease-in 0.5s;
+}
+
+.footerNavlist ul li a:hover{
+    color: #1fd819;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0px auto;
+    max-width: 100%;
+    padding-left: 0px;
+}
+
+.footerQuote{
+    margin-top: 45px;
+    margin-left: -50px;
+}
+
+.footerQuote p{
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+hr{
+    width: 1050px;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+.copyright{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -60px;
+}
