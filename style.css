@@ -11,7 +11,7 @@
 header{
     position: fixed;
     width: 100%;
-    height: 70px;
+    height: 65px;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -19,7 +19,8 @@ header{
     padding: 20px 150px;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    /* background: transparent; */
+    background: rgba(0, 0, 0, 0.767);
     transition: all 0.3s;
 }
 
@@ -115,21 +116,68 @@ header.sticky{
 }
 
 /******************* container *******************/
-/* .container{
-    min-height: 100vh;
-    height: 100%;
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1}
+  }
+
+.slideshow-container .link{
+    text-decoration: none;
+} 
+
+.mySlides {
+    display: none;
+    /* background-color: #363636; */
+}
+
+.mySlides img{
     width: 100%;
-    background-image: linear-gradient(to bottom, #011b01b0, #00000041) , url('./images/diary/diary8.jpg');
-    background-position: center;
-    background-size: cover;
-    padding: 20px 150px;
-    box-sizing: border-box;
-} */
+    height: 750px;
+    /* opacity: .8; */
+}
+
+/* Next & previous buttons */
+.prev, .next {  
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -100px;
+    padding: 100px 20px;
+    color: white;
+    font-weight:lighter;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(0,0,0,0.8); */
+}
 
 /* content */
 .content{
     padding: 20px 140px;
-    padding-top: 24%;
+    font-size: 15px;
+    color: #000000;
+    bottom: 108px;
+    /* width: 50%; */
+    position: absolute;
+
 }
 
 .content h1{
@@ -145,7 +193,7 @@ header.sticky{
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 4px;
     padding-bottom: 50px;
 }
@@ -155,7 +203,7 @@ header.sticky{
 }
 
 .explore-btn{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .explore-btn a{
@@ -167,20 +215,160 @@ header.sticky{
     border: 1px solid #000000;
     border-radius: 30px;
     text-decoration: none;
-    /* background-color: transparent; */
     background-color: #000000;
     transition: all 0.9s;
 }
 
 .explore-btn a:hover{         
     letter-spacing: 6px;
-    /* border: 1px solid #011601;
-    background-color: #011601; */
     color: #000;
     border: #ffffffe5;
     background-color: #ffffffe5;
 }
 
+/* textContent */
+/* text1 */
+.textHolder1 {
+    margin-left: 12%;
+}
+
+.textHolder1 .text{
+    bottom: 228px;
+    width: 36%;
+    padding: 50px 40px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(77, 77, 77, 0.452)
+}
+
+.textHolder1 .text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.textHolder1 .text p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333d0;
+    margin-top: 10px;
+}
+
+/* text2 */
+.textHolder2{
+    margin-left: 58%;
+}
+
+.textHolder2 .text{
+    bottom: 228px;
+    width: 30%;
+    padding: 45px 50px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(77, 77, 77, 0.452)
+}
+
+.textHolder2 .text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.textHolder2 .text p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333d0;
+    margin-top: 10px;
+}
+
+/* text3 */
+.textHolder3{
+    margin-left: 58%;
+}
+
+.textHolder3 .text{
+    bottom: 228px;
+    width: 32%;
+    padding: 50px 40px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(77, 77, 77, 0.452)
+}
+
+.textHolder3 .text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.textHolder3 .text p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333d0;
+    margin-top: 10px;
+}
+
+/* text4 */
+.textHolder4{
+    margin-left: 58%;
+}
+
+.textHolder4 .text{
+    bottom: 170px;
+    width: 32%;
+    padding: 50px 40px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(77, 77, 77, 0.452)
+}
+
+.textHolder4 .text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.textHolder4 .text p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333d0;
+    margin-top: 10px;
+}
+
+/* text5 */
+.textHolder5{
+    margin-left: 12%;
+}
+
+.textHolder5 .text{
+    bottom: 200px;
+    width: 32%;
+    padding: 50px 40px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(77, 77, 77, 0.452)
+}
+
+.textHolder5 .text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.textHolder5 .text p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333d0;
+    margin-top: 10px;
+}
+
+
+/*
 .newContent{
     padding: 10px 125px;
     padding-top: 14%;
@@ -211,7 +399,6 @@ header.sticky{
 }
 
 
-/***************** TRYOUT FOR A NEW CONTAINER *************/
 #frame {
     margin: 0 auto;
     width: 100%;
@@ -219,8 +406,6 @@ header.sticky{
     background-color: transparent;
     max-width: 100%;
 
-    
-    /* text-align: center; */
 }
 
 #frame input[type=radio] {
@@ -233,9 +418,7 @@ header.sticky{
 }
 
 #slides {
-    /* padding: 10px; */
     height: 108%;
-    /* border: 5px solid #0F0; */
     background: rgb(0, 0, 0);
     position: relative;
     z-index: 1;
@@ -244,8 +427,6 @@ header.sticky{
 #overflow {
     width: 100%;
     height: 100%;
-    /* padding: 20px 150px;
-    box-sizing: border-box; */
     overflow: hidden;
 }
 
@@ -404,7 +585,7 @@ header.sticky{
 #frame5:checked~#bullets label:nth-child(5),
 #frame6:checked~#bullets label:nth-child(6) {
     background: #000000;
-}
+} */
 
 
 
@@ -544,18 +725,6 @@ header.sticky{
 }
 
 /****************** about *********************/
-#about::before,
-#about::after{
-    content: '';
-    position: absolute;
-    height: 100px;
-    bottom: -290%;
-    right: 0;
-    left: 0;
-    background: #ffffff;
-    transform: skewY(-2deg);
-}
-
 #about{
     /* background-image: linear-gradient(to top left, #aca8a805, #242323c5), url('./images/diary/diary1.jpeg'); */
     background-image: linear-gradient(to top left, #aca8a805, #242323c5), url('./images/vision/vision&mission.jpg');
@@ -647,18 +816,6 @@ header.sticky{
 
 
 /********************* Product *********************/
-.product::before,
-.product::after{
-    content: '';
-    position: absolute;
-    height: 100px;
-    bottom: -461%;
-    right: 0;
-    left: 0;
-    background: #ffffff;
-    transform: skewY(-2deg);
-}
-
 .product{
     background-color: #ffffff;
     /* margin-bottom: 6%; */
@@ -770,17 +927,6 @@ header.sticky{
 }
 
 /************ distribution ************/
-.distribution::before,
-.distribution::after{
-    content: '';
-    position: absolute;
-    height: 100px;
-    bottom: -682%;
-    right: 0;
-    left: 0;
-    background: #ffffff;
-    transform: skewY(-2deg);
-}
 
 .distribution{
     background-color: #e4e4e442;
@@ -868,19 +1014,7 @@ header.sticky{
     margin-left: 90%;
 }
 
-/************ distribution ************/
-/* .location::before,
-.location::after{
-    content: '';
-    position: absolute;
-    height: 100px;
-    bottom: -876%;
-    right: 0;
-    left: 0;
-    background: #ffffff;
-    transform: skewY(-2deg);
-} */
-
+/************ location ************/
 .location{
     background-color: #ffffff;
     margin-top: 0%;
@@ -944,18 +1078,6 @@ header.sticky{
 }
 
 /* ownerchip */
-/* .ownership::before,
-.ownership::after{
-    content: '';
-    position: absolute;
-    height: 100px;
-    bottom: -1030%;
-    right: 0;
-    left: 0;
-    background: #ffffff;
-    transform: skewY(-2deg);
-} */
-
 .ownership{
     background-color: #e4e4e442;
     margin-top: 0%;
@@ -1265,7 +1387,7 @@ hr{
         padding: 20px 50px;
         align-items: center;
         justify-content: space-between;
-        background: transparent;
+        background: rgba(0, 0, 0, 0.767);
         transition: all 0.3s;
     }
     
@@ -1376,12 +1498,31 @@ hr{
         border: 1px solid #fff;
         background-color: #fff;
     }
+
+    .mySlides img{
+        width: 100%;
+        height: 600px;
+    }    
     
+    .prev, .next {  
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -100px;
+        padding: 100px 20px;
+        color: white;
+        font-weight:lighter;
+        font-size: 30px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
     
     /* content */
     .content{
-        padding: 20px 60px;
-        padding-top: 50%;
+        padding: 40px 60px;
+        margin-top: -50%;
     }
     
     .content h1{
@@ -1397,7 +1538,7 @@ hr{
         font-weight: 500;
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin-top: 50px;
+        margin-top: 0px;
         margin-left: 4px;
         padding-bottom: 50px;
     }
@@ -1407,7 +1548,7 @@ hr{
     }
     
     .explore-btn{
-        margin-top: 50px;
+        margin-top: 0px;
     }
     
     .explore-btn a{
@@ -1431,7 +1572,7 @@ hr{
     }
 
     
-    #about::before,
+    /* #about::before,
     #about::after{
         display: none;
     }
@@ -1445,7 +1586,7 @@ hr{
     .distribution::after{
         display: none;
     }
-    
+     */
 
     #service{
         margin-top: 40%;
