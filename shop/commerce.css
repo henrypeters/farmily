@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/********************** header ********************/
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    padding: 20px 100px;
+    align-items: center;
+    justify-content: space-between;
+    /* background: transparent; */
+    background: rgb(53, 53, 53);
+    transition: all 0.3s;
+}
+
+header.sticky{
+    background: #0a0a0a;
+    height: 70px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308)
+    
+}
+
+#menu{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+#menuCover{
+    display: none;
+}
+
+.newHead{
+    background-color: #000;
+    height: 70px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    padding: 20px 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    cursor: pointer;
+    width: 180px;
+    height: 170px;
+    margin-top: 20px;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist li{
+    position: relative;
+    list-style: none;
+}
+
+.navlist li .norm{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navlist li .norm::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: -3px;
+    left: 0;
+    transition: ease .4s;
+}
+
+.navlist li .norm:hover::after{
+    width: 100%;
+}
+
+#cart img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+/*  */
+.container{
+    min-height: 100vh;
+    /* height: 100%; */
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(38, 68, 88, 0.493), rgba(45, 46, 41, 0.452)
+    ),
+     url("../images/products/product5.jpg");
+     /* url("../../farmily-site/images/video1.mp4"); */
+    background-position: center;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode:hard-light;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h2{
+    color: #fff;
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.wave{
+    content: '';
+    position: absolute;
+    height: 260px;
+    width: 100%;
+    bottom: -2%;
+    right: 0;
+    left: 0;
+}
+
+/* products */
+.products{
+    margin-top: 100px;
+    padding: 20px 150px;
+}
+
+#meatProducts{
+    padding-top: 10%;
+}
+
+#meatProducts h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#diaryProducts h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#feedProducts h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#livestockProducts h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#diaryProducts{
+    padding-top: 10%;
+}
+
+#feedProducts{
+    padding-top: 10%;
+}
+
+#livestockProducts{
+    padding-top: 10%;
+}
+
+.heading{
+    margin-bottom: 30px;
+}
+
+.heading::before{
+    content: '';
+    background: #1cdb02;
+    height: 5px;
+    width: 50px;
+    border-radius: 100px;
+    /* text-align: center; */
+    margin-left: 0px;
+    display: block;
+    transform: translateY(56px);
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.display a{
+    text-decoration: none;
+}
+
+.product{
+    width: 310px;
+    height: auto;
+    margin: 30px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgba(83, 83, 94, 0.3) 0px 7px 29px 0px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.product:hover{
+    transform: translateY(-10px);
+}
+
+.product img{
+    width: 100%;
+    height: 220px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.text{
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.product .comp{
+    color: #6b6b6b;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.product .productName{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -2px;
+    /* text-align: center; */
+}
+
+.starImg{
+    display: flex;
+    padding: 0px 5px;
+    margin-top: -25px;
+}
+
+.starImg img{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+.price{
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.842);
+    letter-spacing: 1px;
+}
