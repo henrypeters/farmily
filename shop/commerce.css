@@ -278,3 +278,77 @@ header.sticky{
     color: rgba(0, 0, 0, 0.842);
     letter-spacing: 1px;
 }
+
+/*************** Footer ************/
+.footer{
+    background-color: rgb(31, 30, 30);
+    padding: 12% 4.5%;
+}
+
+.company h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.company p{
+    color: rgba(255, 255, 255, 0.473);
+    margin-left: 70px;
+}
+
+.footerNavlist {
+    margin-top: -15px;
+    margin-left: 120px;
+}
+
+.footerNavlist ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footerNavlist ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: ease-in 0.5s;
+}
+
+.footerNavlist ul li a:hover{
+    color: #1fd819;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0px auto;
+    max-width: 100%;
+    padding-left: 0px;
+}
+
+.footerQuote{
+    margin-top: 45px;
+    margin-left: -10px;
+}
+
+.footerQuote p{
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+hr{
+    width: 1050px;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+.copyright{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -60px;
+}
