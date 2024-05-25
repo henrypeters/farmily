@@ -116,30 +116,86 @@ header.sticky{
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode:hard-light;
+    background-blend-mode:soft-light;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     flex-direction: column;
 }
 
-.container h2{
-    color: #fff;
-    font-size: 42px;
+.writeUp{
+    width: 35%;
+    position: absolute;
+    padding: 50px 20px;
+    border-radius: 10px;
+    /* overflow: auto; */
+    margin-top: -18%;
+    margin-left: 45%;
+    box-shadow: rgba(83, 83, 94, 0.3) 0px 7px 29px 0px;
+    /* background-color: rgba(83, 83, 83, 0.521); */
+    background-color: rgb(255, 255, 255);
+}
+
+.writeUp h2{
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.writeUp p{
+    color: #3a3a3a;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+.btns a{
+    width: 100%;
+    margin: 5px;
+}
+
+.product1,
+.product2{
+    width: 100%;
+    color: #000000a2;
     font-weight: 600;
-    margin-top: 50px;
-    margin-left: 300px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #000000a2;
+    background-color: transparent;
+    transition: all ease-in-out 0.4s;
+}
+
+.product1{
+    color: #fff;
+    background-color: green;
+    border: 1px solid green;
+}
+
+.product2:hover{
+    color:#fff;
+    background-color: #21c40b;
+    border: 1px solid rgb(2, 168, 2);
 }
 
 .wave{
     content: '';
     position: absolute;
-    height: 260px;
+    height: 220px;
     width: 100%;
-    bottom: -2%;
+    bottom: -1%;
     right: 0;
     left: 0;
 }
